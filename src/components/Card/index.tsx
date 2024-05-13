@@ -6,8 +6,9 @@ type CardProps = {
 const Card = ({ rank, description }: CardProps) => {
   return (
     <div className='card flex gap-4 py-4'>
-      <div className=''>{rank}</div>
-      <div className='relative flex-1 max-h-[130px]'>{description}</div>
+      <div className='card-body'>
+        <h2 className='card-title'>{`#${rank} ${description}`}</h2>
+      </div>
     </div>
   );
 };

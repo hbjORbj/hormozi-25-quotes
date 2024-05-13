@@ -12,7 +12,7 @@ export default async function Home() {
   const data = await getData();
 
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
+    <main className='max-w-3xl mx-auto pt-4'>
       <Header />
       {data.map((quote, index) => (
         <Card key={index} description={quote} rank={index + 1} />
